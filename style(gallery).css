@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.banner{
+    position: relative;
+    min-height: 400;
+    background: url(img/banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background: #6698b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.banner a{
+    margin-top: 150px;
+    font-size: 7em;
+    font-weight: 700;
+    color: #fff;
+}
+
+header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1A5276;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+    padding: 0 100px;
+    transition: 0.6s;
+}
+
+header .logo{
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 700;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+header .dropdown{
+   margin: 0 auto;
+}
+
+header .navigation .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    user-select: none;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1800px;
+    min-height: 400px;
+    background: #9ba5b3;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+.container .left_Side{
+    background: #9ba5b3;
+    padding: 40px;
+    margin-top: 65px;
+
+}
+
+.container .right_Side{
+    position: relative;
+    background: #D7DBDD;
+    padding: 40px;
+}
+
+.container p{
+    font-size: 1.3em;
+    font-weight: 100;
+    text-align: justify;
+    margin-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section{
+    padding-top: 10;
+    background: #6698b8;
+    width: 10%;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    min-height: 10px;
+}
+
+section h2{
+    text-align: center;
+}
+
+section a{
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    margin: 20px;
+    padding: 25px 0;
+}
+
+section ul{
+    position: absolute;
+    padding-top: 15%;
+}
+
+footer{
+    background: #6698b8;
+    width: 100%;
+    min-height: 60px;
+}
+
+header nav ul{
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 30px;
+}
+
+header nav ul li{
+    background: #1A5276;
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+
+header nav ul li a{
+    display: block;
+    padding: 0 13px;
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+}
+
+header nav ul ul{
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+
+header nav ul li:hover > ul{
+    display: block;
+    background: #6698b8;
+}
+
+header nav ul ul li{
+    width: 150px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+h1{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h4{font-size: 100px;
+    font-style: italic;
+    color: black;
+    margin-left: 150px;
+    text-align: center;
+    
+}
+  
+    .slider{
+        width: 800px;
+        height: 500px;
+        border-radius: 10px;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;  
+        margin-left: 250px;  
+    }
+    .slides{
+        width: 500%;
+        height: 500px;
+        display: flex;
+        
+    }
+    .slides input{
+        display: none;
+    }
+    .slide{
+        width: 20%;
+        transition: 2s;
+    }
+    .slide img{
+        width: 800px;
+        height: 500px;
+    }
+    
+    /*css for manual slide navigation*/
+    .navigation-manual{
+        position: absolute;
+        width: 800px;
+        margin-top: 480px;
+        display: flex;
+        justify-content: center;
+    }
+    .manual-btn{
+        border: 2px solid #40d3dc;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .manual-btn:not(:last-child){
+        margin-right: 40px;
+    }
+    .manual-btn:hover{
+        background: #40d3dc;
+    }
+    #radio1:checked ~ .first{
+        margin-left: 0;
+    }
+    #radio2:checked ~ .first{
+        margin-left: -20%;
+    }
+    #radio3:checked ~ .first{
+        margin-left: -40%;
+    }
+    #radio4:checked ~ .first{
+        margin-left: -60%;
+    }
+    
+    /*css for manual slide navigation*/
+    .navigation-auto{
+        position: absolute;
+        display: flex;
+        width: 800px;
+        justify-content: center;
+    }
+    .navigation-auto div{
+        border: 2px solid #40d3dc;
+        padding: 5px;
+        border-radius: 10px;
+        transition: 1s;
+    }
+    .navigation-auto div:not(:last-child){
+        margin-right: 40px;
+    }
+    #radio1:checked ~ navigation-auto .auto-btn1{
+        background: #40d3dc;
+    }
+    #radio2:checked ~ navigation-auto .auto-btn2{
+        background: #40d3dc;
+    }
+    #radio3:checked ~ navigation-auto .auto-btn3{
+        background: #40d3dc;
+    }
+    #radio4:checked ~ navigation-auto .auto-btn4{
+        background: #40d3dc;
+    }
+    .containerCB{
+        position: relative;
+        margin-bottom: -45%;
+        margin-left: 50px;
+        margin-right: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+        margin-top: 4%;
+    }
+    .button{
+        width: 90px;
+        border: 0;
+        padding: 12px 10px;
+        outline: none;
+        color: #fff;
+        background: linear-gradient(to right,#1abc9c, #149279);
+        border-radius: 6px;
+        cursor: pointer;
+        transition: width 0.5s;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: 'Rubik', sans-serif;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    .button :hover{
+        width: 120px;
+        display: inline-block;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;}
+    
+    p{font-size: xxx-large;
+    margin-top: 800px;
+    }

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rumah Bakti Dato Harun</title>
+        <link rel="stylesheet" href="style(gallery).css">
+    </head>
+    <body>
+        <header>
+            <div class="dropdown">
+                <nav><ul class="menu">
+                    <img src="img/logo.png"height="40px" width="40px" class="logo"> 
+                    <li class="menu-item"><a href="index.html">Home</a></li>
+                    <li class="menu-item"><a href="webmaster.html">Webmaster</a></li>
+                    <li class="menu-item"><a href="about.html">About</a>
+                    <li class="menu-item"><a href="gallery.html">Gallery</a></li>
+                    <li class="menu-item"><a href="contactus.html">Contact Us</a></li>
+                </ul>
+                </ul></nav>
+            </div>
+        </header>
+        <div class="banner">
+            <a><h1 id="gallery">Gallery</h1></a>
+        </div>
+    </body>
+    <main>
+        <section>
+            <a><h2>Share</h2></a>
+            <br>
+            <ul>
+                <li><br><br><img src="img/logo.png"height="40px" width="40px" class="logo"> </li>
+                <br>
+                <li><a href="https://www.facebook.com/RumahBaktiDatoHarun/" target="_blank"><img src="https://educadores21.com/wp-content/uploads/2012/04/Facebook_icon-300x300.png" height="50px" width="50px"></a></li>
+                <br><br>
+                <li><a href="https://www.instagram.com/rumahbakti_datoharun/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" height="40px" width="38px"></a></li>
+            </ul>
+          </section>
+          <br><div class="container">
+            <div class="left_Side">
+                <a><h4>PICTURES</h4></a>
+            
+                <div class="slider">
+                    <div class="slides">
+        
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+						<input type="radio" name="radio-btn" id="radio5">
+                
+							<div class="slide first">
+							   <img src="img/1.jpg" alt="picture">
+							</div>
+							
+							<div class="slide">
+								<img src="img/2.jpg" alt="picture">
+							</div>
+					
+							<div class="slide">
+								<img src="img/3.jpg" alt="picture">
+							</div>
+					
+							<div class="slide">
+								<img src="img/4.jpg" alt="picture">
+							</div>
+
+							<div class="slide">
+								<img src="img/5.jpg" alt="picture">
+							</div>
+							
+							<div class="navigation-manual">
+								<label for="radio1" class="manual-btn"></label>
+								<label for="radio2" class="manual-btn"></label>
+								<label for="radio3" class="manual-btn"></label>
+								<label for="radio4" class="manual-btn"></label>
+								<label for="radio5" class="manual-btn"></label>
+							</div>
+					
+							<div class="navigation-auto">
+								<div class="auto-btn1"></div>
+								<div class="auto-btn2"></div>
+								<div class="auto-btn3"></div>
+								<div class="auto-btn4"></div>
+								<div class="auto-btn5"></div>
+							</div>
+        
+					</div>
+         
+            <!--image slider end-->
+            <div class="containerCB">
+                
+                <a href="gallery.html" class="button">Next </a>
+            </div>   
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function(){
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+                    if(counter > 4){
+                        counter =1;
+                    }
+                }, 5000);
+            </script>        
+    </main>
+    <footer>
+        <br><center><h3>Copyright © 2023. ICM460 : Assignment to build a website for an orphanage. This website is for the purpose of this assignment only. All Right Reserved.</h3></center>
+    </footer>
+</html>
+        
+        
+
+

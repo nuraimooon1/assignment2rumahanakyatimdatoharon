@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.banner{
+    position: relative;
+    min-height: 400;
+    background: url(img/banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner a{
+    margin-top: 150px;
+    font-size: 100px;
+    font-weight: 700;
+    color: #fff;
+}
+
+h1{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1A5276;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+    padding: 0 100px;
+    transition: 0.6s;
+}
+
+header .logo{
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 700;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+header .dropdown{
+   margin: 0 auto;
+}
+
+header .navigation .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    user-select: none;
+}
+
+header nav ul{
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 30px;
+}
+
+header nav ul li{
+    background: #1A5276;
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+
+header nav ul li a{
+    display: block;
+    padding: 0 13px;
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+}
+
+
+header nav ul ul{
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+
+header nav ul li:hover > ul{
+    display: block;
+    background: #6698b8;
+}
+
+header nav ul ul li{
+    width: 150px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+main{
+    background: #6698b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1800px;
+    min-height: 400px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+.container .left_Side{
+    position: relative;
+    background: #9ba5b3;
+    padding: 40px;
+}
+
+.container .right_Side{
+
+    position: relative;
+    background: #D7DBDD;
+    padding: 40px;
+}
+
+.container p{
+    font-size: 1.8em;
+    font-weight: 100;
+    text-align: justify;
+}
+
+section{
+    padding-top: 10;
+    background: #6698b8;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    min-height: 10px;
+}
+
+section h2{
+    text-align: center;
+}
+
+section a{
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    margin: 20px;
+    padding: 25px 0;
+}
+
+section ul{
+    position: absolute;
+    padding-top: 15%;
+}
+
+footer{
+    background: #6698b8;
+    width: 100%;
+    min-height: 60px;
+}
+
+/*This section is for Webmaster parts.*/
+
+.container .left_side1{
+    position: relative;
+    background: lightcyan;
+    padding: 40px;
+}
+
+.container .left_side1 h1{
+    color: rgb(21, 143, 145);
+}
+
+.container .right_side2{
+    position: relative;
+    background: hsl(0, 0%, 90%);
+    padding: 40px;
+    text-align: center;
+}
+
+.container .right_side2 h1 {
+    color: #1A5276;
+    margin-top: 60px;
+}
+
+.container .right_side2 h2 {
+    color: lightseagreen;
+}
+
+.contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contain .profile{
+    width: 330px;
+    height: 416px;
+    padding: 60px 30px;
+    margin: 50px;
+    background-color: lightskyblue;
+    box-shadow: 0.6em 0.6em 1.2em rgb(186, 215, 235),
+                -0.5em -0.5em 1em white;
+    border-radius: 20px;
+    float: left;
+}
+
+.contain .profile .student{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contain .profile .student .face{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.contain .profile .student .face img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.desc h4{
+    font-weight: 800;
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: darkslateblue;
+    font-family: serif;
+}
+
+.soc{
+    color: darkslateblue;
+    font-size: 30px;
+    margin-top: -30px;
+}
+
+
+
+/*This section is for Contact Us parts.*/
+
+.contact-box{
+    background: url(img2/contactbg.jfif) no-repeat center;
+    background-size: cover;
+    padding: 50px 0px;
+}
+
+.contact-box h1{
+    text-align: center;
+    color: #02263d;
+    font-size: 50px;
+}
+
+.border{
+    width: 180px;
+    height: 15px;
+    background: #1A5276;
+    margin: 20px auto;
+}
+
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.field{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 24px 0;
+    border: 0px;
+    background: black;
+    padding: 20px 40px;
+    outline: none;
+    color: white;
+    transition: 0.6s ease;
+    font-size: 18px;
+}
+
+.field:focus{
+    box-shadow: 0 0 10px 4px #1A5276;
+}
+
+textarea .field{
+    resize: none;
+    height: 150px;
+}
+
+.btn{
+    float:right;
+    border: none;
+    background: #1A5276;
+    color: white;
+    padding: 12px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.6s;
+    font-size: 20px;
+}
+
+.btn:hover{
+    background: #6698b8;
+
+}
